@@ -1,21 +1,22 @@
+// Codigo encapsulado e profissional
 public class Principal {
     public static void main(String[] args) {
-        // Instanciando a classe Aluno
+        // 1. Instanciando o aluno
         Aluno aluno1 = new Aluno();
 
-        // Atribuindo valores aos atributos
-        aluno1.nome = "Maria Silva";
-        aluno1.enderecoResidencial = "Rua das Flores, 123";
-        aluno1.telefoneContato = "(91) 98888-7777";
-        aluno1.email = "maria.silva@email.com";
-        aluno1.matricula = "202601001";
+        // 2. Atribuindo valores de forma segura (com os SETTERS)
+        aluno1.setNome("Maria Silva");
+        aluno1.setEnderecoResidencial("Rua das Flores, 123");
+        aluno1.setTelefoneContato("(91) 98888-7777");
+        aluno1.setEmail("maria.silva@email.com");
+        aluno1.setMatricula("202601001");
 
-        // Exibindo os valores para testar o código
+        // 3. Exibindo os valores de forma segura (com os GETTERS)
         System.out.println("--- Dados do Aluno Cadastrado ---");
-        System.out.println("Nome: " + aluno1.nome);
-        System.out.println("Endereço: " + aluno1.enderecoResidencial);
-        System.out.println("Telefone: " + aluno1.telefoneContato);
-        System.out.println("E-mail: " + aluno1.email);
-        System.out.println("Matrícula: " + aluno1.matricula);
+        System.out.println("Nome: " + aluno1.getNome());
+        System.out.println("Endereço: " + aluno1.getEnderecoResidencial());
+        System.out.println("Telefone: " + aluno1.getTelefoneContato());
+        System.out.println("E-mail: " + aluno1.getEmail());
+        System.out.println("Matrícula: " + aluno1.getMatricula());
     }
 }
